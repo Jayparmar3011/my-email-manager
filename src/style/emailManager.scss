@@ -1,0 +1,203 @@
+@import './variables.scss';
+@import './main.scss';
+
+
+body {
+  font-family: $font-family;
+  background: $background-gradient;
+  margin: 0;
+  padding: 0;
+}
+  
+.title-container{
+@include flex-center;
+color: $white;
+font-family: $font-family;
+}
+
+.email-manager-container{
+  @include flex-center;
+  gap: 30px;
+  min-height: 100vh;
+}
+
+.email-manager {
+  min-width: 380px;
+  margin: 10px 0px;
+  padding: 20px;
+  background: $ghost-white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  font-family: $font-family;
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color:  $light-blue;
+}
+
+h2 {
+  text-align: center;
+  color: $text-dark;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $dark-grayish-blue;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: $white;
+  color: $text-dark;
+}
+
+.recipient-card {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid $Platinum;
+  border-radius: 8px;
+  background: $white;
+}
+
+h3 {
+  margin: 0px 5px 10px 5px;
+  font-size: 16px;
+  color: $text-black;
+}
+
+.group {
+  min-width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid $border-light;
+  border-radius: 5px;
+  background-color: $light-blue;
+}
+
+strong {
+  cursor: pointer;
+  font-size: 16px;
+  color: $blue;
+}
+
+strong:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+li {
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+li:hover {
+  background-color: $hover-background;
+   border-color: $hover-border; 
+}
+
+li span {
+  font-size: 14px;
+  color: $text-dark;
+  font-weight: 600;
+}
+
+.domain-name {
+  color: $blue;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.domain-name:hover {
+  color: $bold-blue; 
+}
+
+button {
+  padding: 5px 8px;
+  border: none;
+  background: $green;
+  color: $white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.select-button {
+  background-color: $button-green; 
+  color: $white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.select-button:hover {
+  background-color: $button-green-hover;
+}
+
+.svg-container {
+  margin: auto 0px;
+}
+
+.group-header {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid $border-light;
+  border-radius: 4px;
+  background-color: $white;
+  color: $text-dark;
+  outline: none;
+  transition: border 0.3s ease;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  border-color: $blue;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.no-data {
+  margin: 1px 0px;
+  min-width: 290px;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid $border-light;
+  border-radius: 5px;
+  background-color: $light-blue;
+}
+
+.remove-button {
+  background-color: $button-red; 
+  color: $white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: $button-red-hover;
+}

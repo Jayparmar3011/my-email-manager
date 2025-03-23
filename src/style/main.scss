@@ -1,0 +1,9 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+body {
+  font-family: $font-family;
+  background: $background-gradient;
+  margin: 0;
+  padding: 0;
+}
