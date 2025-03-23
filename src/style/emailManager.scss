@@ -1,6 +1,5 @@
-@import './variables.scss';
-@import './main.scss';
-
+@import "./variables.scss";
+@import "./main.scss";
 
 body {
   font-family: $font-family;
@@ -8,14 +7,14 @@ body {
   margin: 0;
   padding: 0;
 }
-  
-.title-container{
-@include flex-center;
-color: $white;
-font-family: $font-family;
+
+.title-container {
+  @include flex-center;
+  color: $white;
+  font-family: $font-family;
 }
 
-.email-manager-container{
+.email-manager-container {
   @include flex-center;
   gap: 30px;
   min-height: 100vh;
@@ -32,13 +31,7 @@ font-family: $font-family;
   max-height: 500px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color:  $light-blue;
-}
-
-h2 {
-  text-align: center;
-  color: $text-dark;
-  margin-bottom: 15px;
+  scrollbar-color: $light-blue;
 }
 
 input {
@@ -57,12 +50,13 @@ input {
   border: 1px solid $Platinum;
   border-radius: 8px;
   background: $white;
-}
 
-h3 {
-  margin: 0px 5px 10px 5px;
-  font-size: 16px;
-  color: $text-black;
+  h3 {
+    margin: 0px 5px 10px 5px;
+    font-size: 16px;
+    color: $text-black;
+    font-weight: 500;
+  }
 }
 
 .group {
@@ -72,43 +66,43 @@ h3 {
   border: 1px solid $border-light;
   border-radius: 5px;
   background-color: $light-blue;
-}
 
-strong {
-  cursor: pointer;
-  font-size: 16px;
-  color: $blue;
-}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+  }
 
-strong:hover {
-  text-decoration: underline;
-}
+  li {
+    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+  }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 5px 0;
-}
+  li:hover {
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
 
-li {
-  margin-left: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px;
-  cursor: pointer;
-  border-radius: 8px;
-}
+  li span {
+    font-size: 14px;
+    color: $text-dark;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
 
-li:hover {
-  background-color: $hover-background;
-   border-color: $hover-border; 
-}
+  span:hover{
+    color: $dark-grayish-blue;
+   }
 
-li span {
-  font-size: 14px;
-  color: $text-dark;
-  font-weight: 600;
 }
 
 .domain-name {
@@ -119,7 +113,7 @@ li span {
 }
 
 .domain-name:hover {
-  color: $bold-blue; 
+  color: $bold-blue;
 }
 
 button {
@@ -137,7 +131,7 @@ button:hover {
 }
 
 .select-button {
-  background-color: $button-green; 
+  background-color: $button-green;
   color: $white;
   border: none;
   padding: 6px 12px;
@@ -158,6 +152,10 @@ button:hover {
 .group-header {
   display: flex;
   gap: 10px;
+
+  span{
+    cursor: pointer;
+  }
 }
 
 .search-input {
@@ -188,7 +186,7 @@ button:hover {
 }
 
 .remove-button {
-  background-color: $button-red; 
+  background-color: $button-red;
   color: $white;
   border: none;
   padding: 6px 12px;

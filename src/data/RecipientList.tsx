@@ -1,5 +1,5 @@
 export const initialRecipients = [
-  { email: "ann@timescale.com", isSelected: false },
+  { email: "jaykumarparmar161970@timescale.com", isSelected: false },
   { email: "bob@timescale.com", isSelected: false },
   { email: "brian@qwerty.com", isSelected: true },
   { email: "james@qwerty.com", isSelected: false },
